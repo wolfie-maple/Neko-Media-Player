@@ -2,22 +2,22 @@ package com.barrelofkittens;
 
 // Object for songs/media tracks.
 public class Track {
-    private String path; // Where the file is stored on the system.
-    private float weight; // How likely the track is to be selected in a shuffle. Higher means more likely to be selected.
+    private String name; // The name of the file stored on the system.
+    private float weight; // How likely the track is to be selected in a shuffle. Higher value means more likely to be selected.
 
     Track (){
-        path = "";
+        name = "";
         weight = 0;
-        System.out.println("Warning: this track has no path and thus does not exist!");
+        System.out.println("Warning: this track has no name and thus does not exist!");
     }
 
     Track (String p){
-        path = p;
+        name = p;
         weight = 0;
     }
 
     Track (String p, int w){
-        path = p;
+        name = p;
         weight = w;
     }
 
