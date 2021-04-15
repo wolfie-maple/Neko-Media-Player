@@ -1,5 +1,7 @@
 package com.barrelofkittens;
 
+import java.io.File;
+
 public class Library {
     private Track[] trackMap;
     private String folderPath; // Where the playlist folder is stored on the machine.
