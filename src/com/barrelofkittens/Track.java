@@ -7,13 +7,13 @@ public class Track {
 
     Track (){
         name = "";
-        weight = 0;
+        weight = 128;
         System.out.println("Warning: this track has no name and thus does not exist!");
     }
 
     Track (String p){
         name = p;
-        weight = 0;
+        weight = 128;
     }
 
     Track (String p, int w){
@@ -23,10 +23,14 @@ public class Track {
 
     public float setWeight(float w){
         weight = w;
-        return w;
+        return weight;
     }
 
     public float getWeight(){
         return weight;
+    }
+
+    public String getName(){
+        return name;
     }
 }
